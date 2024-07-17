@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms tutorial for javascript</title>
+    <style>
+        /* Add any necessary styles here */
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="funsubmit()">
+    Your Email Please:<input type="email" name="" id="input" onfocus="onfun()"
+     onblur="offfun()" onselect="selectfun()" required>
+     <!-- required mens it is compulsar fill to karna he padega -->
+
+     <input type="submit" value="Submit Now">
+    </form>
+</body>
+<script>
+    let input=document.getElementById("input");
+function onfun() {
+    input.style.backgroundColor = "red";
+}
+function offfun(){
+    input.style.backgroundColor="yellow";
+}
+ function funsubmit(){
+    /*alert("You Submitted");*/
+    alert(`${input.value}`);
+ }
+function selectfun(){
+    alert("You select something");
+}
+</script>
+</html>
